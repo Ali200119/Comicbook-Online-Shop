@@ -20,6 +20,9 @@ nav {
     background-color: black;
     height: 80px;
     font-family: Assistant;
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 
 nav .Flex {
@@ -145,7 +148,7 @@ nav .Flex .Menu {
 /* Products Start */
 
 #Products {
-    height: 91.5vh;
+    height: 105vh;
     background-image: url("./images/Background.webp");
     background-size: cover;
     background-repeat: no-repeat;
@@ -155,6 +158,7 @@ nav .Flex .Menu {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    
     position: relative;
     top: 100px;
 }
@@ -323,6 +327,91 @@ nav .Flex .Menu {
 
 #Products .Container .Card4 .ContentBox a {
     background-color: yellow;
+    color: black;
+}
+
+#Products .Container .Card5 {
+    background-color: #E5A444;
+}
+
+#Products .Container .Card5::before {
+    background-color: #B37963;
+}
+
+#Products .Container .Card5 .ContentBox h3 {
+    color: black;
+}
+
+#Products .Container .Card5 .ContentBox h2 {
+    color: black;
+}
+
+#Products .Container .Card5 .ContentBox a {
+    background-color: #B37963;
+    color: black;
+}
+
+
+#Products .Container .Card6 {
+    background-color: #EE1C25;
+}
+
+#Products .Container .Card6::before {
+    background-color: #00AEF0;
+}
+
+#Products .Container .Card6 .ContentBox h3 {
+    color: black;
+}
+
+#Products .Container .Card6 .ContentBox h2 {
+    color: black;
+}
+
+#Products .Container .Card6 .ContentBox a {
+    background-color: #00AEF0;
+    color: black;
+}
+
+#Products .Container .Card7 {
+    background-color: #95FFD1;
+}
+
+#Products .Container .Card7::before {
+    background-color: #46FD31;
+}
+
+#Products .Container .Card7 .ContentBox h3 {
+    color: black;
+}
+
+#Products .Container .Card7 .ContentBox h2 {
+    color: black;
+}
+
+#Products .Container .Card7 .ContentBox a {
+    background-color: #46FD31;
+    color: black;
+}
+
+#Products .Container .Card8 {
+    background-color: black;
+}
+
+#Products .Container .Card8::before {
+    background-color: #DB3849;
+}
+
+#Products .Container .Card8 .ContentBox h3 {
+    color: white;
+}
+
+#Products .Container .Card8 .ContentBox h2 {
+    color: white;
+}
+
+#Products .Container .Card8 .ContentBox a {
+    background-color: #DB3849;
     color: black;
 }
 
