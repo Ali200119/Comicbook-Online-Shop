@@ -42,7 +42,7 @@ nav .Flex .Logo .DC {
     top: 3px;
 }
 
-nav .Flex .Menu a {
+nav .Flex .Menu .Home {
     position: relative;
     display: flex;
     width: 100px;
@@ -55,7 +55,7 @@ nav .Flex .Menu a {
     overflow: hidden;
 }
 
-nav .Flex .Menu a:hover {
+nav .Flex .Menu .Home:hover {
     background-color: var(--clr);
     box-shadow: 0 0 10px var(--clr),
     0 0 30px var(--clr),
@@ -63,18 +63,18 @@ nav .Flex .Menu a:hover {
     0 0 100px var(--clr)
 }
 
-nav .Flex .Menu a span {
+nav .Flex .Menu .Home span {
     font-size: 23px;
     color: white;
     z-index: 1;
     opacity: 0.7;
 }
 
-nav .Flex .Menu a:hover span {
+nav .Flex .Menu .Home:hover span {
     opacity: 1;
 }
 
-nav .Flex .Menu a::before {
+nav .Flex .Menu .Home::before {
     content: '';
     position: absolute;
     width: 20px;
@@ -86,7 +86,7 @@ nav .Flex .Menu a::before {
     left: 40px;
 }
 
-nav .Flex .Menu a::after {
+nav .Flex .Menu .Home::after {
     content: '';
     position: absolute;
     inset: 4px;
@@ -94,11 +94,11 @@ nav .Flex .Menu a::after {
     transition-duration: 500ms;
 }
 
-nav .Flex .Menu a:hover::after {
+nav .Flex .Menu .Home:hover::after {
     background-color: var(--clr);
 }
 
-nav .Flex .Menu a:hover::before {
+nav .Flex .Menu .Home:hover::before {
     width: 120%;
     left: 0;
 }
@@ -114,10 +114,21 @@ nav .Flex .Menu a:hover::before {
 }
 
 nav .Flex .Menu .Basket {
+    height: 30px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+nav .Flex .Menu .Basket sup {
+    position: relative;
+    bottom: 10px;
+    color: white;
+    font-size: large;
+}
+
+nav .Flex .Menu .Basket .BasketIcon {
     color: white;
     font-size: 23px;
-    position: relative;
-    top: 23px;
 }
 
 nav .Flex .Menu {
