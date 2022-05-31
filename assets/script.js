@@ -1,4 +1,5 @@
 let AddButtons = document.querySelectorAll (".ContentBox");
+let ProductCount = document.querySelector (".productCount");
 
 AddButtons.forEach(item => {
     let AddButton = item.lastElementChild;
@@ -31,5 +32,22 @@ AddButtons.forEach(item => {
         }
 
         localStorage.setItem("basket", JSON.stringify(array));
+
+        WriteProductCount ();
     }
 });
+
+function WriteProductCount () {
+    if (localStorage.getItem("basket") != null) {
+        let array = JSON.parse(localStorage.getItem("basket"));
+        
+        let TotalCount = 0;
+        array.map(product=>{
+            TotalCount += product.count;
+        });
+
+        ProductCount.innerText = TotalCount;
+    }
+}
+
+WriteProductCount ();
