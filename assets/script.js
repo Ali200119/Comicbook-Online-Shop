@@ -1,16 +1,12 @@
 let AddButtons = document.querySelectorAll (".ContentBox");
 
-if (local.Storage.getItem("basket") == null) {
-    localStorage.setItem("basket", JSON.stringify([]));
-}
-
 AddButtons.forEach(item => {
     let AddButton = item.lastElementChild;
 
     AddButton.onclick = function (event) {
         event.preventDefault();
 
-        if (local.Storage.getItem("basket") == null) {
+        if (localStorage.getItem("basket") == null) {
             localStorage.setItem("basket", JSON.stringify([]));
         }
 
