@@ -37,7 +37,7 @@ nav .Flex {
 nav .Flex .Logo .Marvel {
     margin-right: 30px;
     position: relative;
-    bottom: 12px;
+    top: 3px;
 }
 
 nav .Flex .Logo .DC {
@@ -118,7 +118,7 @@ nav .Flex .Menu .Home:hover::before {
 
 nav .Flex .Menu .Basket {
     height: 30px;
-    margin-top: 20px;
+    margin-top: 24px;
     text-decoration: none;
 }
 
