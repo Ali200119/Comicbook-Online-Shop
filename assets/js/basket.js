@@ -9,7 +9,7 @@ if (localStorage.getItem("basket") != null) {
         let tdImage = document.createElement ("td");
         let Image = document.createElement ("img");
         Image.src = product.imageURL;
-        Image.style.width = "100px";
+        Image.style.width = "120px";
         tdImage.append(Image);
         
         let tdName = document.createElement ("td");
