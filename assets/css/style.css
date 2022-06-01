@@ -6,12 +6,12 @@
 
 @font-face {
     font-family: Assistant;
-    src: url("./fonts/Assistant.ttf");
+    src: url("/assets/fonts/Assistant.ttf");
 }
 
 @font-face {
     font-family: Roboto;
-    src: url("./fonts/Roboto.ttf");
+    src: url("/assets/fonts/Roboto.ttf");
 }
 
 /* NavBar Start */
@@ -149,7 +149,7 @@ nav .Flex .Menu {
 
 #Products {
     height: 142vh;
-    background-image: url("./images/Background.webp");
+    background-image: url("/assets/images/Background.webp");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -413,6 +413,27 @@ nav .Flex .Menu {
 #Products .Container .Card8 .ContentBox a {
     background-color: #DB3849;
     color: black;
+}
+
+#Products .Container .Card9 {
+    background-color: #9B2322;
+}
+
+#Products .Container .Card9::before {
+    background-color: #017CC2;
+}
+
+#Products .Container .Card9 .ContentBox h3 {
+    color: white;
+}
+
+#Products .Container .Card9 .ContentBox h2 {
+    color: white;
+}
+
+#Products .Container .Card9 .ContentBox a {
+    background-color: #017CC2;
+    color: white;
 }
 
 /* Cards End */
