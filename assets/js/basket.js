@@ -30,6 +30,16 @@ if (localStorage.getItem("basket") != null) {
         Delete.style.cursor = "pointer";
         tdDelete.append(Delete);
 
+        
+        Delete.onclick = function () {
+            let NewArray = array.filter(function (value) {
+                value.id != product.id;
+            })
+
+            array += NewArray;
+        }
+
+
         tr.append(tdImage, tdName, tdPrice, tdCount, tdDelete);
         Table.lastElementChild.append(tr);
     });
