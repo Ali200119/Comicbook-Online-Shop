@@ -21,7 +21,16 @@ if (localStorage.getItem("basket") != null) {
         let tdCount = document.createElement ("td");
         tdCount.innerText = product.count;
 
-        tr.append(tdImage, tdName, tdPrice, tdCount);
+
+        let tdDelete = document.createElement ("td");
+        let Delete = document.createElement ("i");
+        Delete.classList.add("fa-solid");
+        Delete.classList.add("fa-trash");
+        Delete.style.color = "red";
+        Delete.style.cursor = "pointer";
+        tdDelete.append(Delete);
+
+        tr.append(tdImage, tdName, tdPrice, tdCount, tdDelete);
         Table.lastElementChild.append(tr);
     });
 }
